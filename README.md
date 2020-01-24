@@ -8,11 +8,12 @@
   * Pretrained Embedding
     * Script: [SentimentUsingGlove.ipynb](./SentimentUsingGlove.ipynb)
     * Training Samples: 8000
-    * Validation Accuracy: 70%
-    * Test Data Accuracy: 71.45%
-  * Update Embedding is permitted (The embedding layer is constrained to UnitNorm)
-    * Script: [SentimentUsingGlove-UpateEmbedding.ipynb](./SentimentUsingGlove-UpateEmbedding.ipynb)
-    * Training Samples: 8000
-    * Validation Accuracy: 84.15%
-    * Test Data Accuracy: 83%
+    * Validation Accuracy: 67.49%
+    * Test Data Accuracy: 67%
+
+Notes / Observations:
+max words kept : 10,000
+Used 300 dimensions file from Globe Embedding database
+The max text length was kept to 100.
+When model.layers[0].trainable set to True, validation and test accuracies were slightly better (~ 76%)
 
